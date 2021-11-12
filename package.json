@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/Linkazen/odin_restaurant/issues"
   },
-  "homepage": "https://github.com/Linkazen/odin_restaurant#readme"
+  "homepage": "https://github.com/Linkazen/odin_restaurant#readme",
+  "devDependencies": {
+    "webpack": "^5.64.0",
+    "webpack-cli": "^4.9.1"
+  }
 }
