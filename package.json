@@ -1,0 +1,19 @@
+{
+  "name": "odin_restaurant",
+  "version": "1.0.0",
+  "description": "Restaurant webpage for the odin project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Linkazen/odin_restaurant.git"
+  },
+  "author": "Linkazen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Linkazen/odin_restaurant/issues"
+  },
+  "homepage": "https://github.com/Linkazen/odin_restaurant#readme"
+}
