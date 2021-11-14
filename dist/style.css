@@ -1,19 +1,23 @@
-body {
-    background-image: url('./pizza-table.jpg');
-    background-size: 100% ;
+body, html {
+    background-image: url('./backgroundpizza.jpg');
+    background-size: 100%;
     background-repeat: no-repeat;
+    height: 100%;
+    margin: 0;
 }
 
 #content {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: space-between;
+    justify-content: space-evenly;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 100%;
 }
 
 #textbox {
     display: flex;
     flex-direction: column;
+    align-self: center;
+    justify-content: center;
     align-items: center;
     width: 600px;
     background-color: rgba(255, 255, 255, 0.5);
@@ -22,4 +26,16 @@ body {
 
 #aboutpara {
     width: 500px;
+}
+
+.photocoll {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.photos {
+    height: 300px;
+    width: 300px;
+    border-radius: 25px;
 }
