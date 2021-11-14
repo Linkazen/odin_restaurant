@@ -1,7 +1,6 @@
 body, html {
-    background-image: url('./backgroundpizza.jpg');
-    background-size: 100%;
-    background-repeat: no-repeat;
+    background: url('./backgroundpizza.jpg') no-repeat center center;
+    background-size: 1920px 1080px;
     height: 100%;
     margin: 0;
 }
@@ -28,6 +27,23 @@ body, html {
     width: 500px;
 }
 
+.barlist {
+    margin: 0 15px 8px 15px;
+    text-align: center;
+    border-bottom: 3px solid black;
+}
+
+#selectbar {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+    background-color: white;
+}
+
 .photocoll {
     display: flex;
     flex-direction: column;
@@ -35,7 +51,7 @@ body, html {
 }
 
 .photos {
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
     border-radius: 25px;
 }
