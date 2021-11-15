@@ -1,1 +1,4 @@
-console.log("everything is very fine")
+import { aboutGen } from "./about";
+import './style.css';
+
+aboutGen()
