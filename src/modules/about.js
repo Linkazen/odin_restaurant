@@ -1,9 +1,9 @@
-import image1 from './bolognese.jpg'
-import image2 from './pizza1.jpg'
-import image3 from './steak.jpg'
-import image4 from './pasta.jpg'
-import image5 from './pizza2.jpg'
-import image6 from './meatballs.jpg'
+import image1 from '../images/aboutimgs/bolognese.jpg'
+import image2 from '../images/aboutimgs/pizza1.jpg'
+import image3 from '../images/aboutimgs/steak.jpg'
+import image4 from '../images/aboutimgs/pasta.jpg'
+import image5 from '../images/aboutimgs/pizza2.jpg'
+import image6 from '../images/aboutimgs/meatballs.jpg'
 
 export function aboutGen() {
     let maindiv = document.querySelector("#content")
@@ -14,7 +14,7 @@ export function aboutGen() {
     pictures2.setAttribute("class", "photocoll")
 
     let textbox = document.createElement("div")
-    textbox.setAttribute("id", "textbox")
+    textbox.setAttribute("class", "textbox")
 
     let img = undefined
     let images = [image1, image2, image3, image4, image5, image6]
@@ -36,7 +36,7 @@ export function aboutGen() {
     headline.textContent = "The Ordalini Restaurant"
 
     let paragraph = document.createElement("p")
-    paragraph.setAttribute("id", "aboutpara")
+    paragraph.setAttribute("class", "para")
     paragraph.innerHTML = `The Odin Restaurant is a Restaurant dedicated to letting you and your fmaily have an amazing time in our establishment,
     with our affordable prices and amazing chefs a time at Ordalini Restaurant will be an experience to never forget. <br> <br>
     The Ordalini Restaurant boasts a wide array of food including (but not limited to), Pizza, Steak, Meatballs, Spaghetti bolognase,

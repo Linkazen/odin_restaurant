@@ -1,4 +1,5 @@
-import { aboutGen } from "./about";
+import { aboutGen } from "./modules/about";
+import { contactGen } from "./modules/contact";
 import './style.css';
 
 let aboutbtn = document.querySelector("#about") 
@@ -7,7 +8,7 @@ let contactbtn = document.querySelector("#contact")
 
 aboutbtn.addEventListener("click", aboutGen)
 // menubtn.addEventListener("click", )
-// contactbtn.addEventListener("click", )
+contactbtn.addEventListener("click", contactGen)
 
 
 

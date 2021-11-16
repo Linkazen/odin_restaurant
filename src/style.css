@@ -1,5 +1,5 @@
 body, html {
-    background: url('./backgroundpizza.jpg') no-repeat center center;
+    background: url('./images/backgroundpizza.jpg') no-repeat center center;
     position: fixed;
     background-size: 100% 100%;
     width: 100%;
@@ -14,7 +14,25 @@ body, html {
     height: 100%;
 }
 
-#textbox {
+#selectbar {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+    background-color: white;
+}
+
+#guyphoto {
+    width: 300px;
+    height: 300px;
+    border-radius: 25px;
+    margin-top: 50px;
+}
+
+.textbox {
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -25,19 +43,8 @@ body, html {
     border-radius: 25px;
 }
 
-#aboutpara {
+.para {
     width: 500px;
-}
-
-#selectbar {
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    justify-content: center;
-    height: 50px;
-    width: 100%;
-    background-color: white;
 }
 
 .barlist {
