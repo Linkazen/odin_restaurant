@@ -9,19 +9,15 @@ export function aboutGen() {
     let maindiv = document.querySelector("#content")
     let pictures1 = document.createElement("div")
     pictures1.setAttribute("class", "photocoll")
+
     let pictures2 = document.createElement("div")
-    pictures2.setAttribute("id", "photocoll")
+    pictures2.setAttribute("class", "photocoll")
+
     let textbox = document.createElement("div")
     textbox.setAttribute("id", "textbox")
-    let img = undefined
-    let images = []
 
-    images.push(image1)
-    images.push(image2)
-    images.push(image3)
-    images.push(image4)
-    images.push(image5)
-    images.push(image6)
+    let img = undefined
+    let images = [image1, image2, image3, image4, image5, image6]
 
     maindiv.innerHTML = ""
 
@@ -29,7 +25,7 @@ export function aboutGen() {
         img = new Image();
         img.src = images[i]
         img.className = "photos"
-        if (i < 4) {
+        if (i < 3) {
             pictures1.appendChild(img)
         } else {
             pictures2.appendChild(img)
@@ -38,6 +34,7 @@ export function aboutGen() {
 
     let headline = document.createElement("h1")
     headline.textContent = "The Ordalini Restaurant"
+
     let paragraph = document.createElement("p")
     paragraph.setAttribute("id", "aboutpara")
     paragraph.innerHTML = `The Odin Restaurant is a Restaurant dedicated to letting you and your fmaily have an amazing time in our establishment,
