@@ -2,6 +2,7 @@ import guyimg from '../images/contactimgs/guy.jpg'
 
 export function contactGen() {
     let conMaindiv = document.querySelector("#content")
+    let conMaindivbox = document.createElement("div")
     let conTextbox = document.createElement("div")
     let conPara = document.createElement("p")
     let listShell = document.createElement("ul")
@@ -29,6 +30,9 @@ export function contactGen() {
     conTextbox.appendChild(conPara)
     conTextbox.appendChild(listShell)
 
+    conMaindivbox.id = 'contentbox'
+    conMaindivbox.appendChild(conTextbox)
+
     conMaindiv.innerHTML = ''
-    conMaindiv.appendChild(conTextbox)
+    conMaindiv.appendChild(conMaindivbox)
 }

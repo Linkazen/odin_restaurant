@@ -16,6 +16,9 @@ export function aboutGen() {
     let textbox = document.createElement("div")
     textbox.setAttribute("class", "textbox")
 
+    let maindivbox = document.createElement("div")
+    maindivbox.id = 'contentbox'
+
     let img = undefined
     let images = [image1, image2, image3, image4, image5, image6]
 
@@ -46,9 +49,8 @@ export function aboutGen() {
     textbox.appendChild(headline)
     textbox.appendChild(paragraph)
 
-    
-
-    maindiv.appendChild(pictures1)
-    maindiv.appendChild(textbox)
-    maindiv.appendChild(pictures2)
+    maindivbox.appendChild(pictures1)
+    maindivbox.appendChild(textbox)
+    maindivbox.appendChild(pictures2)
+    maindiv.appendChild(maindivbox)
 }
