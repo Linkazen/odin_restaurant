@@ -14,11 +14,12 @@ body {
 }
 
 #content {
-    height: calc(100% - 93px);
+    height: calc(100% - 53px);
     width: 100%;
     background-color: rgba(255, 255, 255, 0.5);
     overflow: auto;
-    padding-top: 93px;
+    padding-top: 53px;
+    overflow: hidden;
 }
 
 #contentbox {
@@ -26,6 +27,8 @@ body {
     justify-content: space-evenly;
     height: 100%;
     width: 100%;
+    animation-duration: 2s;
+    animation-name: moveup;
 }
 
 #selectbar {
@@ -89,6 +92,7 @@ body {
 
 .menuphotos {
     max-width: 100%;
+    margin-top: 40px;
     width: auto;
     height: auto;
 }
@@ -97,11 +101,32 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    gap: 30px 0px;
+    gap: 25px 0px;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 .photos {
     height: 250px;
     width: 250px;
     border-radius: 25px;
+    border: 3px solid black;
+}
+
+@keyframes movedown {
+    from {
+        transform: translate(0, 0);
+    }
+    to {
+        transform: translate(0, 100%);
+    }
+}
+
+@keyframes moveup {
+    from {
+        transform: translate(0, 100%);
+    }
+    to {
+        transform: translate(0, 0);
+    }
 }

@@ -4,9 +4,9 @@ export function menuGen() {
     let menuMaindiv = document.querySelector("#content")
     let menuMaindivbox = document.createElement("div")
     let menu = document.createElement("div")
-    let imgs = [pizimg]
-    let foodheaderdesc = [""]
-    let fooddesc = [""]
+    let imgs = [pizimg, pizimg]
+    let foodheaderdesc = ["ssfe", "fsfs"]
+    let fooddesc = ["efafasefaefasefasf", "sefsafsefafaef"]
 
     for (let i = 0; i < imgs.length; i++) {
         let menuitem = document.createElement("div")

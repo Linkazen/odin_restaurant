@@ -40,7 +40,7 @@ export function aboutGen() {
 
     let paragraph = document.createElement("p")
     paragraph.setAttribute("class", "para")
-    paragraph.innerHTML = `The Odin Restaurant is a Restaurant dedicated to letting you and your fmaily have an amazing time in our establishment,
+    paragraph.innerHTML = `The Ordalini Restaurant is a Restaurant dedicated to letting you and your fmaily have an amazing time in our establishment,
     with our affordable prices and amazing chefs a time at Ordalini Restaurant will be an experience to never forget. <br> <br>
     The Ordalini Restaurant boasts a wide array of food including (but not limited to), Pizza, Steak, Meatballs, Spaghetti bolognase,
     Risotto and many more. <br><br>
