@@ -27,8 +27,6 @@ body {
     justify-content: space-evenly;
     height: 100%;
     width: 100%;
-    animation-duration: 2s;
-    animation-name: moveup;
 }
 
 #selectbar {
@@ -53,14 +51,21 @@ body {
 #menu {
     display: flex;
     flex-wrap: wrap;
-    gap: 100px;
     justify-content: space-evenly;
 }
 
 .menuitem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: auto;
     width: auto;
     flex-basis: calc(100%/3);
+    background-color: white;
+    border-radius: 25px;
+    border: 2px solid black; 
+    margin-top: 40px;
 }
 
 .textbox {
@@ -91,10 +96,11 @@ body {
 }
 
 .menuphotos {
-    max-width: 100%;
-    margin-top: 40px;
+    max-width: calc(100%/3);
     width: auto;
     height: auto;
+    border: 6px solid black;
+    border-radius: 25px;
 }
 
 .photocoll {
@@ -110,7 +116,11 @@ body {
     height: 250px;
     width: 250px;
     border-radius: 25px;
-    border: 3px solid black;
+    border: 6px solid black;
+}
+
+.fooddesc {
+    width: calc(100% - 40px);
 }
 
 @keyframes movedown {

@@ -12,6 +12,7 @@ export function contactGen() {
 
     conTextbox.className = 'textbox'
     conTextbox.style.backgroundColor = 'white'
+    conTextbox.style.marginBottom = '100px'
     
     conPara.className = 'para'
     conPara.textContent = 'Chrisi Prati is a world renouned chef capable of cooking many esquisite dishes and even winning awards for his amazing meals.'
